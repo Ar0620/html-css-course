@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Basic Language of the Web:HTML</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -36,7 +37,9 @@
           width="50"
         />
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="img/post-img.jpg"
@@ -113,7 +116,7 @@
 
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <a href="#">
             <img
@@ -125,7 +128,7 @@
             How to Learn Web Development</a
           >
 
-          <p>By <em>Jonas Schmedtmann</em></p>
+          <p class="related-author">By <em>Jonas Schmedtmann</em></p>
         </li>
 
         <li>
@@ -139,7 +142,7 @@
             The Unknown Powers of CSS</a
           >
 
-          <p>By <em>Jim Dillon</em></p>
+          <p class="related-author">By <em>Jim Dillon</em></p>
         </li>
 
         <li>
@@ -153,11 +156,13 @@
             Why JavaScript is Awesome</a
           >
 
-          <p>By <em>Matilda</em></p>
+          <p class="related-author">By <em>Matilda</em></p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2027 by The Code Magazine</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine</p>
+    </footer>
   </body>
 </html>
