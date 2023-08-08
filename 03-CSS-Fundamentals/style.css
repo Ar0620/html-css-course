@@ -1,11 +1,6 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
+  color: #444; /* For all the rules that don't have their color specified elsewhere */
   font-family: sans-serif;
-  color: #444;
 }
 
 h1,
@@ -102,3 +97,48 @@ li:last-child {
 li:nth-child(even) {
   /*   color: red; */
 }
+
+/* Misconception: this wont work */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
+/* Order -> LVHA */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /*  color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Resolving conflicts */
+/* #copyright {
+  color: blue;
+}
+
+.copyright {
+  color: red;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
